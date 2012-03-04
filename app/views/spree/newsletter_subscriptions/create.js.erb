@@ -1,5 +1,5 @@
 $('#newsletter_subscribe').fadeOut(200, function() {
-  $(this).html('Thanks for subscribing!');
+  $(this).html('<%= escape_javascript(flash.discard(:newsletter_subscribe_result)) %>');
   $(this).fadeIn(200, function() {
     $(this).delay(3000).fadeOut(200, function() {
       $(this).html("<%= escape_javascript(render('spree/newsletter_subscriptions/form')) %>");
