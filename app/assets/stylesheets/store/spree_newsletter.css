@@ -1,19 +1,4 @@
-/*
- *= require store/spree_core
-*/
-
-#newsletter_subscribe {
-  position: relative;
-}
-
-#newsletter_subscribe_info {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-#newsletter_subscribe_info {
-  z-index: 10;
-}
+/*#newsletter_subscribe {
+  text-align: right;
+  display: inline-block;
+}*/
