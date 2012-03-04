@@ -1,2 +1,9 @@
-$('#newsletter_subscribe_form').fadeTo(200, 0.2);
-$('#newsletter_subscribe_info').html('Thanks for subscribing!');
+$('#newsletter_subscribe').fadeOut(200, function() {
+  $(this).html('Thanks for subscribing!');
+  $(this).fadeIn(200, function() {
+    $(this).delay(3000).fadeOut(200, function() {
+      $(this).html("<%= escape_javascript(render('spree/newsletter_subscriptions/form')) %>");
+      $(this).fadeIn(200);
+    });
+  });
+});
