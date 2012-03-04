@@ -1,6 +1,10 @@
 <div id="newsletter_subscribe">
-  <%= form_tag newsletter_subscriptions_path, :remote => true do |f| %>
-    <%= text_field_tag :email, nil, :class => "email", :id => "subscribe_email", :placeholder => "Enter your email" %>
-    <%= submit_tag "Subscribe" %>
-  <% end %>
+  <div id="newsletter_subscribe_form">
+    <%= form_tag newsletter_subscriptions_path, :remote => true do |f| %>
+      <%= text_field_tag :email, nil, :class => "email", :id => "subscribe_email", :placeholder => "Enter your email" %>
+      <%= submit_tag "Subscribe" %>
+    <% end %>
+  </div>
+  <div id="newsletter_subscribe_info">
+  </div>
 </div>
